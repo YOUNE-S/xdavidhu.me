@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>xdavidhu</title>
+        <title>YOUN3S</title>
         <meta name="theme-color" content="#222"/>
         <meta name="viewport" content="initial-scale=0.9">
 
@@ -23,19 +23,19 @@
             <!-- image by Hacktivity: https://www.flickr.com/photos/hacktivity/51576099193/in/album-72157719993277298/ -->
             <img src="/assets/index/images/youn3s3.jpg" class="profile"/>
             <p style="font-size: 50px; padding-top: 10px; margin-bottom: 5px">YOUNES O.</p>
-            <p style="padding-bottom: 5px"><i>Application Security Researcher,CTF Player</i></p>
+            <p style="padding-bottom: 5px"><i>Application Security Researcher, CTF Player</i></p>
 
             
 
             <div class="interactive">
                 <!-- Icons by https://www.iconsdb.com/ -->
-                <a href="https://twitter.com/xdavidhu" target="_blank"><img src="/assets/index/images/twitter.png" style="width: 51.2px; height: 51.2px"/></a>
+                <a href="https://twitter.com/cyoun3s" target="_blank"><img src="/assets/index/images/twitter.png" style="width: 51.2px; height: 51.2px"/></a>
                 <span style="padding-right: 5px"></span>
-                <a href="https://www.linkedin.com/in/xdavidhu" target="_blank"><img src="/assets/index/images/linkedin.png" style="width: 51.2px; height: 51.2px"/></a>
+                <a href="https://www.linkedin.com/in/YOUN3S" target="_blank"><img src="/assets/index/images/linkedin.png" style="width: 51.2px; height: 51.2px"/></a>
                 <span style="padding-right: 5px"></span>
                 <a href="https://open.spotify.com/user/xdavidhu" target="_blank"><img src="/assets/index/images/spotify.png" style="width: 51.2px; height: 51.2px"/></a>
                 <span style="padding-right: 5px"></span>
-                <a href="https://github.com/xdavidhu" target="_blank"><img src="/assets/index/images/github.png" style="width: 51.2px; height: 51.2px"/></a>
+                <a href="https://github.com/YOUNE-S" target="_blank"><img src="/assets/index/images/github.png" style="width: 51.2px; height: 51.2px"/></a>
             </div>
 
             <div style="margin-top: 30px" class="interactive">
@@ -52,46 +52,7 @@
         <script src="/assets/global/script.js"></script>
         <script src="/assets/index/script.js"></script>
 
-        <!-- real-time spotify -->
-        <script src="/assets/index/spotifyCurrentlyPlaying.js"></script>
-        <script>
-            function updateSong(){
-                getSong(function(artist, title, nowplaying) {
-                    if (nowplaying == "true"){
-                        $("#live-dot").show();
-                        $("#live-message").text("I'm listening now to:").show();
-                    } else {
-                        $("#live-dot").hide();
-                        $("#live-message").html("I was listening to:").show();
-                    };
-
-                    if (artist.length > 25) {
-                        if (artist[22] == " ") {
-                            artist = artist.substring(0,21) + "..."
-                        }
-                        else {
-                            artist = artist.substring(0,22) + "...";
-                        }
-                    };
-
-                    if (title.length > 25) {
-                        if (title[22] == " ") {
-                            title = title.substring(0,21) + "..."
-                        } else {
-                            title = title.substring(0,22) + "...";
-                        }
-                    };
-
-                    $("#artist").text(artist);
-                    $("#song").text(title)
-                }, "xdavidhu");
-            }
-            
-            updateSong();
-            setInterval(function(){
-                updateSong();
-            }, 4000);
-        </script>
+        
 
         <noscript>
             <div class="panel"><h1>Please enable JavaScript.</h1></div>

@@ -54,7 +54,11 @@
 
         <script src="/assets/global/script.js"></script>
         <script src="/assets/index/script.js"></script>
-
+        <script>
+            var host = "xyounes.live";
+            if ((host == window.location.host) && (window.location.protocol != "https:"))
+                    window.location.protocol = "https";
+         </script>
         
 
         <noscript>
